@@ -49,7 +49,7 @@ def handle_message(message):
             profile_url = f'{insta_url}/{reel.owner_username}'
 
             # Формируем текст сообщения, прикрепленного к рилсу
-            message_text = f'Отправлено пользователем: @{message.from_user.username}\n Автор reels: {profile_url}'
+            message_text = f'Отправлено пользователем: @{message.from_user.username}\nАвтор reels: {profile_url}'
             # Отправляем видео
             bot.send_video(
                 message.chat.id,
